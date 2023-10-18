@@ -49,6 +49,4 @@ return loading ? <>carregando...</> :
     </>
 }
 
-}
-
 export default Perfil
