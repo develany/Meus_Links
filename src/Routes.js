@@ -4,14 +4,15 @@ import NotFound from "./pages/NotFound/NotFound";
 import Login from "./pages/Login/Login";
 import Perfil from "./pages/Perfil/Perfil";
 import Cadastro from "./pages/Cadastro/Cadastro";
+import Usuarios from "./pages/Ususuarios/Usuarios";
 
 function Routes() {
     return (
         <Rotas>
             <Route path="/login" element={<Login />} />
-            <Route path="/perfil" element={<Perfil />} />
+            <Route path="/perfil/:id" element={<Perfil />} />
             <Route path="/cadastro" element={<Cadastro />} />
-
+            <Route path="/usuarios" element={<Usuarios />} />
             {
                 isLogado ? (
                     <>

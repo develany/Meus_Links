@@ -26,11 +26,11 @@ const Login = () => {
 
             localStorage.setItem("logado", true);
             localStorage.setItem("token", response.data.token);
-            localStorage.setItem("usuario", response.data.usuario);
+            localStorage.setItem("id", response.data.usuario.id);
 
             setToken(response.data.token)
             setUsuario(response.data.usuario);
-            window.location.href = "/perfil";
+            window.location.href = `/perfil/${response.data.usuario.id}`;
         } catch (error) {
             alert(error.response.data.error)
         }

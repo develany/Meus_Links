@@ -1,13 +1,11 @@
-
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import CardPerfil from "../../components/CardPerfil";
-import Tabela from "../../components/Tabela";
+import TabelaEdicoes from "../../components/TabelaEdições/TabelaEdicoes";
 
 
-const Perfil = () => {
-    const { id } = useParams();
+const Configuracoes = () => {
+    const id = localStorage.getItem('id');
     const [usuario, setUsuario] = useState([]);
     const [loading, setLoading] = useState(false);
     const [links, setLink] = useState([]);
@@ -34,17 +32,14 @@ const Perfil = () => {
             setLoading(false);
         }
     }
-
     return loading ? <>carregando...</> :
         <>
-            <div id="formulario" >
+            <div>
                 <CardPerfil usuario={usuario} links={links}></CardPerfil>
-                <Tabela links={links}></Tabela>
+                <TabelaEdicoes links={links}></TabelaEdicoes>
 
             </div>
         </>
 }
 
-
-
-export default Perfil
+export default Configuracoes
