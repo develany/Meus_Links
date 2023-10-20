@@ -8,8 +8,7 @@ function App() {
   return (
     <div className="bg-primary text-white p-3 text-center mx-auto"
       style={{ width: '50%', marginTop: "3%" }}>
-      {isLogado() && <Menu />}
-      <Configuracoes />
+        {isLogado()&&<Menu />}
       <Routes />
     </div>
   );

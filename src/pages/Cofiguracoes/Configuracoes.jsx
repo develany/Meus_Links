@@ -37,7 +37,7 @@ const Configuracoes = () => {
             <div>
                 <CardPerfil usuario={usuario} links={links}></CardPerfil>
                 <TabelaEdicoes links={links}></TabelaEdicoes>
-
+                
             </div>
         </>
 }
