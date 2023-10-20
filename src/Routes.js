@@ -14,14 +14,18 @@ function Routes() {
             <Route path="/perfil/:id" element={<Perfil />} />
             <Route path="/cadastro" element={<Cadastro />} />
             <Route path="/usuarios" element={<Usuarios />} />
+            <Route path="/" element={<Login />} />
+            <Route path="*" element={<NotFound />} />
+
             {
                 isLogado ? (
                     <>
-                        <Route path="*" element={<NotFound />} />
-                        <Route path= "/configuracoes" element={<Configuracoes/>} />
+                        <Route path="/configuracoes" element={<Configuracoes />} />
+                        <Route path="/" element={<Perfil />} />
+
                     </>
                 ) : (
-                    <Route path="*" element={<Login />} />
+                    <Route path="/" element={<Login />} />
                 )
 
 
