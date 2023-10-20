@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 
 function Menu() {
+  const id = localStorage.getItem('id');
   const deslogar = () => {
     localStorage.removeItem('logado');
     localStorage.removeItem('id');
@@ -32,9 +33,10 @@ function Menu() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Link to={`/perfil/${id}`} style={{ textDecoration: "none", fontWeight: 'bold' }}>Meu Perfil</Link>
                   <Link to="/usuarios" style={{ textDecoration: "none", fontWeight: 'bold' }}>Usuarios</Link>
                   <Link to="/configuracoes" style={{ textDecoration: "none", fontWeight: 'bold' }}>Configurações</Link>
-                  <Link onClick={deslogar}>Sair</Link>
+                  <Link onClick={deslogar} style={{ textDecoration: "none", fontWeight: 'bold' }}>Sair</Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
