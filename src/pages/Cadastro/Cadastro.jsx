@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import { API } from "../../services/Api";
 import { useState } from "react";
 import styles from './Cadastro.module.css';
+import { Link } from 'react-router-dom';
 
 
 const Cadastro = () => {
@@ -33,7 +34,7 @@ const Cadastro = () => {
     return (
         <>
             {usuario && <h2>Bem vindo, {usuario.nome}</h2>}
-            <Form className={styles['form-container']} onSubmit={cadastrar} method="POST">
+            <Form className={styles['form-container']} style={{ color: "black" }} onSubmit={cadastrar} method="POST">
                 <h1>Cadastre-se</h1>
                 <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                     <Form.Label column sm="2">
@@ -61,7 +62,7 @@ const Cadastro = () => {
                 <Button variant="primary" type="submit">
                     Cadastrar
                 </Button>
-                <p>Login</p>
+                <Link to="/login" style={{ textDecoration: "none", fontWeight: 'bold', display: "block" }}>Login</Link>
             </Form>
         </>
 

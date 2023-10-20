@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { API } from "../../services/Api";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -60,7 +61,7 @@ const Login = () => {
                 <Button variant="primary" type="submit">
                     Entrar
                 </Button>
-                <p>Cadastre-se</p>
+                <Link to="/cadastro" style={{ textDecoration: "none", fontWeight: 'bold', display: "block" }}>Cadastre-se</Link>
             </Form>
         </>
 
