@@ -71,8 +71,10 @@ const TabelaEdicoes = ({ links }) => {
     }
     return (
         <>
-            <Form onSubmit={criar} method="POST">
-                <h1>Novo Link</h1>
+            <Form onSubmit={criar} method="POST"
+            style={{marginBottom:"5%"}}>
+                <hr />
+                <h3 style={{marginBottom:"8%"}}>Novo Link</h3>
                 <Form.Group as={Row} className="mb-3" controlId="formPlaintextEmail">
                     <Form.Label column sm="2">
                         Titulo
@@ -90,9 +92,10 @@ const TabelaEdicoes = ({ links }) => {
                         <Form.Control type="text" placeholder="Digite a URL do link " onChange={(evento) => setUrl(evento.target.value)} />
                     </Col>
                 </Form.Group>
-                <Button variant="primary" type="submit">
+                <Button variant="light" type="submit">
                     Adicionar Novo Link
                 </Button>
+                <hr />
             </Form>
             <Table striped bordered hover>
                 <thead>

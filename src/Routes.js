@@ -5,6 +5,7 @@ import Login from "./pages/Login/Login";
 import Perfil from "./pages/Perfil/Perfil";
 import Cadastro from "./pages/Cadastro/Cadastro";
 import Usuarios from "./pages/Ususuarios/Usuarios";
+import Configuracoes from "./pages/Cofiguracoes/Configuracoes";
 
 function Routes() {
     return (
@@ -17,7 +18,7 @@ function Routes() {
                 isLogado ? (
                     <>
                         <Route path="*" element={<NotFound />} />
-
+                        <Route path= "/configuracoes" element={<Configuracoes/>} />
                     </>
                 ) : (
                     <Route path="*" element={<Login />} />

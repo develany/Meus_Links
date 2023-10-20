@@ -23,7 +23,7 @@ const Login = () => {
             const response = await API.post("/usuarios/login",
                 dados
             );
-
+            console.log(response)
             localStorage.setItem("logado", true);
             localStorage.setItem("token", response.data.token);
             localStorage.setItem("id", response.data.usuario.id);
