@@ -32,8 +32,8 @@ function Menu() {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Link to="/usuarios">Usuarios</Link>
-                  <Link to="/configuracoes">Configurações</Link>
+                  <Link to="/usuarios" style={{ textDecoration: "none", fontWeight: 'bold' }}>Usuarios</Link>
+                  <Link to="/configuracoes" style={{ textDecoration: "none", fontWeight: 'bold' }}>Configurações</Link>
                   <Link onClick={deslogar}>Sair</Link>
                 </Nav>
               </Offcanvas.Body>
