@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# Meus Links
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplicação de Gerenciamento de Links com React e Bootstrap 🚀
 
-## Available Scripts
+## Sobre
 
-In the project directory, you can run:
+Bem-vindo ao projeto de frontend da nossa aplicação de gerenciamento de links! Este aplicativo foi construído usando React e React Router Dom para gerenciar as rotas, e Bootstrap para melhorar o design. Ele permite aos usuários se registrarem, fazer login, adicionar, editar e excluir links, além de visualizar uma lista de links do usuário logado e de todos os usuários cadastrados.
 
-### `npm start`
+## Funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- ✅ Registro de usuário
+- 🔐 Login de usuário
+- ➕ Adicionar novo link
+- 📝 Editar link existente
+- 🗑️ Excluir link
+- 📋 Exibir lista de links do usuário logado
+- 👥 Exibir lista de todos os usuários cadastrados
+- 📊 Visualizar detalhes de cada usuário
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Tecnologias Utilizadas
 
-### `npm test`
+- React
+- React Router Dom
+- Bootstrap 
+- Axios para fazer requisições à API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configuração
 
-### `npm run build`
+Antes de iniciar a aplicação, você deve configurar a URL da API fornecida para acessar os dados. Abra o arquivo `src/services/Api.jsx` e substitua `API` pela URL da sua API:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+``` javascript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+const API = "sua_url_da_api";
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
 
-### `npm run eject`
+## Instalação
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clone o repositório:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+``` bash
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+git clone https://github.com/seurepositorio/link-management-app.git
+cd link-management-app
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+2. Instale as dependências:
+   
+``` bash
+Copy code
+npm install
 
-## Learn More
+``` 
+3. Inicie o servidor de desenvolvimento:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+``` bash
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+npm start
+Agora a aplicação estará rodando em http://localhost:3000.
 
-### Code Splitting
+``` 
+4. Uso
+   
+Acesse http://localhost:3000 em seu navegador.
+Registre um novo usuário ou faça login.
+Adicione, edite e exclua links na sua conta.
+Explore a lista de links do usuário logado e dos usuários cadastrados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+5. Contribuindo
+   
+Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas (issues) e solicitações de pull (pull requests) para melhorar este projeto.
 
-### Analyzing the Bundle Size
+6. Licença
+   
+Este projeto é licenciado sob a Licença MIT.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
